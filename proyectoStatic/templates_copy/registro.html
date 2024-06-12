@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/registro.css">
+    <title>Formulario Registro</title>
+    <link rel="icon" href="/static/img/Logo2.jpeg" type="image/icon type">
+</head>
+
+<body>
+    <section class="form-register">
+        <form action="/usuarios/registrarUser" method="post" onsubmit="return verificacionContrasenas()">
+            <h4>Registrate</h4>
+            <div class="campo_form">
+                <label for="nombres">Nombres</label>
+                <input class="controls" type="text" name="nombres" id="nombres">
+            </div>
+            <div class="campo_form">
+                <label for="apellidos">Apellidos</label>
+                <input class="controls" type="text" name="apellidos" id="apellidos">
+            </div>
+            <div class="campo_form">
+                <label for="tel">Número telefónico </label>
+                <input class="controls" type="tel" name="tel" id="tel">
+            </div>
+            <div class="campo_form">
+                <label for="fechaNac">Fecha de Nacimiento</label>
+                <input class="controls" type="date" name="fechaNac" id="fechaNac">
+            </div>
+            <div class="campo_form">
+                <label for="correo">Correo eletrónico</label>
+                <input class="controls" type="email" name="correo" id="correo">
+            </div>
+            <div class="campo_form">
+                <label for="rol">Escoge tu rol</label>
+                <select name="rol" id="rol" type="text" class="controls" >
+                    <option value="">Seleccionar</option>
+                    <option value="usuario">Usuario</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+            </div>
+            <div class="campo_form">
+                <label for="contrasena">Contraseña</label>
+                <input class="controls" type="password" name="contrasena" id="contrasena">
+            </div>
+
+            <div class="campo_form">
+                <label for="confirmar_contrasena">Confirmar contrasena</label>
+                <input  class="controls"  type="password" name="confirmar_contrasena" id="confirmar_contrasena">
+            </div>
+            
+            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar">
+            <p><a href="#">¿ya tienes cuenta?</a></p>
+
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>

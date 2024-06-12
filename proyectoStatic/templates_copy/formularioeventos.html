@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprenesy</title>
+    <link rel="icon" href="../img/Logo2.jpeg" type="image/icon type">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../static/styles/generales_admin.css">
+    <link rel="stylesheet" href="../static/styles/index_admin.css">
+
+</head>
+
+
+<body>
+
+    <header id="cabecera">
+        <div id="cabeza"></div>
+    </header>
+
+    <main>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span><i class="bi bi-list"></i></span>
+            </div>
+            <ul class="toggle-info">
+                <li>
+                    <div class="tigle-img">
+                        <img src="/img/logo_Emprenesy.png" alt="Logo Fazt" class="logo">
+                    </div>
+                </li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./MVQ.html">Nosotros</a></li>
+            </ul>
+        </div>
+
+        <div class="container_publicaciones" id="publicaciones__form">
+            <div class="publicaciones_contenido">
+                <div class="contenido__title">
+                    <h2>Añade tu evento </h2>
+                </div>
+                <div class="contenido__detalles">
+                    <form class="info_detalles" action="/templates/publicacionRes1.html">
+                        <div class="detalle__sitio">
+                            <h3>Detalles del evento</h3>
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="nombre">Nombre del evento</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="logo">Logo</label>
+                            <input type="file" id="file-upload-button" name="logo" style="display:none;">
+                            <label for="file-upload-button" class="file-upload-btn">Seleccionar archivo</label>
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="galeria">Galeria de evento</label>
+                            <input type="file" id="galeria" name="galeria" style="display:none;" multiple>
+                            <label for="file-upload-button" class="file-upload-btn">Seleccionar imagenes</label>
+                        </div>
+                        
+                        <div class="detalle__sitio">
+                            <label for="typeRes">Tipo de evento</label>
+                            <select name="restaurante" id="restaurante">
+                                <option value="">Seleccionar</option>
+                                <option value="internacional">Eventos de danza</option>
+                                <option value="tematicos">Ferias gastronomicas</option>
+                                <option value="vista">Ferias tegnologicas</option>
+                                <option value="gourmet">Eventos deportivos</option>
+                                <option value="comidaRapida">Exposiciones de arte</option>
+                                <option value="parillas">Conciertos de musica</option>
+                                <option value="internacional">Ferias de libros</option>.
+                                
+                            </select>
+                        </div>
+                        
+                        <div class="detalle__sitio">
+                            <label for="redes">Redes del evento</label>
+                            <input type="url" name="redes" id="redes" placeholder="https://example.com">
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="menu">contacto</label>
+                            <input type="url" name="menu" id="menu" placeholder="https://example.com/menú">
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="menu">Fecha</label>
+                            <input class="nav" type="date" name="txtañodeimprenta">
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="horarioE">Horario Entrada</label>
+                            <input type="time" name="horarioE" id="horarioE" >
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="horarioS">Horario Salida</label>
+                            <input type="time" name="horarioS" id="horarioS" >
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="menu">Ubicacion</label>
+                            <input type="url" name="menu" id="menu" placeholder="Direccion del evento">
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="descripcion">descripcion del evento</label>
+                            <textarea name="descripcion" id="descripcion" cols="70" rows="8"
+                                placeholder="Tu descripción"></textarea>
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="pagina">Pagina del evento</label>
+                            <input type="url" name="pagina" id="pagina" placeholder="https://example.com">
+                        </div>
+                        <div class="detalle__sitio">
+                            <label for="boletos">Boleteria</label>
+                            <input type="url" name="boletos" id="boletos" placeholder="https://example.com">
+                        </div>
+                        <div class="detalle__sitio boton_form">
+                            <input type="submit" value="Siguiente" class="btn__form">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="principal_footer">
+            <div>
+                <svg class="olas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="vector-olas"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="efecto">
+                        <use xlink:href="#vector-olas" x="48" y="7" fill="#3d77ba" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="contenedor_footer">
+            <div class="contenedor_content">
+
+                <div class="contenedor_list">
+                    <ul class="footer_list">
+                        <li>Preguntas Frecuentes</li>
+                        <li>Términos y Condiciones</li>
+                    </ul>
+                </div>
+
+                <div class="contenedor_list2">
+                    <ul class="footer_list">
+                        <li>Contáctenos</li>
+                        <li>Nosotros</li>
+                    </ul>
+                </div>
+
+                <div class="contenedor_list3">
+                    <ul class="footer_list">
+                        <li>Siguenos en</li>
+                        <div class="iconos">
+                            <img src="../img/tik-tok.png" alt="tiktok">
+                            <img src="../img/facebook.png" alt="facebook">
+                            <img src="../img/instagram1.png" alt="instagram">
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="copy">&copy;2024-Emprenesy.Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="../static/js/generales_admin.js"></script>
+    <script src="../static/js/publicacionesRes.js"></script>
+    <script src="../static/js/buscador.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprenesy</title>
+    <link rel="icon" href="/static/img/Logo2.jpeg" type="image/icon type">
+
+    <!-- Enlace a la fuente de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/styles/generales_admin.css">
+    <link rel="stylesheet" href="/static/styles/perfil_admin.css">
+
+</head>
+
+
+<body>
+
+    <header id="cabecera">
+        <div id="cabeza"></div>
+    </header>
+
+    <main>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span><i class="bi bi-list"></i></span>
+            </div>
+            <ul class="toggle-info">
+                <li>
+                    <div class="tigle-img">
+                        <img src="/static/img/logo_Emprenesy.png" alt="Logo Fazt" class="logo">
+                    </div>
+                </li>
+                <li><a href="./index_admin.html">Dashboard</a></li>
+                <li><a href="./perfil_Admin.html">Perfil</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./MVQ.html">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="container__perfil">
+
+            <div class="perfil__portada">
+                <div class="portada__foto">
+                    <img src="/static/img/bogota-turismo.jpg" alt="portada de perfil">
+                </div>
+                <div class="portada__boton">
+                    <form action="/subir_portada" method="POST" enctype="multipart/form-data">
+                        <input type="file" id="file-upload-button" name="fotoPortada" style="display:none; "
+                            onchange="this.form.submit()">
+                        <label for="file-upload-button" class="portada_btn"><i class="fa-solid fa-camera-retro"></i>
+                            Editar foto de portada</label>
+                    </form>
+                </div>
+            </div>
+            <div class="perfil__contenido">
+                <div class="contenido__datos">
+                    <div class="perfil__foto">
+                        <div class="perfil">
+                            <img src="/static/img/perfil_user.png" alt="Foto de perfil">
+                        </div>
+                        
+                        <div class="pefil__boton">
+                            <form action="/subir_fotoPerfil" method="POST" enctype="multipart/form-data">
+                                <input type="file" id="perfil" name="fotoPerfil" style="display:none;"
+                                    onchange="this.form.submit()">
+                                <label for="perfil" class="perfil_icon"><i class="fa-solid fa-camera-retro"></i></label>
+                            </form>
+
+                        </div>
+                        <h3>Paula Andrea Pulido</h3>
+                    </div>
+
+                    <div class="datos__detalles">
+                        <h3>Detalles</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i>Vive en Bogotá</h4>
+                        <h4><i class="fa-solid fa-envelope"></i>Correo electronico</h4>
+                        <a href="#" class="detalles_btnPer">Editar detalles</a>
+                    </div>
+                    <div class="datos_fotos">
+                        <h3>Fotos</h3>
+                        <div class="fotos__galeria"></div>
+                    </div>
+                </div>
+                <div class="perfil__opciones">
+                    <div class="opciones">
+                        <a href="#">Mis reseñas</a>
+                        <a href="#">Mis fotos</a>
+                        <a href="#">Favoritos</a>
+                    </div>
+                    <div id="opciones__reultado"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="../js/generales_admin.js"></script>
+    <script src="../js/perfil_admin.js"></script>
+    <script src="../js/buscador.js"></script>
+  
+
+
+
+</body>
+
+</html>

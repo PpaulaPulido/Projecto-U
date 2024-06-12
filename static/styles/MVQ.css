@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,500&family=Poppins:wght@300;400&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+/*estilos de particulas*/
+canvas {
+    display: block;
+}
+
+/* Contenedor de particles.js */
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #3d77ba;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/*estilos container emprenesy*/
+header {
+    position: relative;
+    z-index: 2;
+}
+
+.container__emprenesy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    margin: 0 150px;
+    z-index: 1;
+}
+
+.emprenesy__slogan h3 {
+    color: #fff;
+    margin-right: 80px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.emprenesy__logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.emprenesy__logo .logoMain {
+    width: 700px;
+    height: 200px;
+}
+
+/*estilos de acerca de emprenesy*/
+.acerca_emprenesy {
+    background-image: linear-gradient(135deg, #003989 9%, #497cb6 48%, #6195CF 70%);
+    margin-top: 50px;
+
+}
+
+.acerca__info {
+    padding: 40px 60px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.acerca__info p {
+    margin-top: 30px;
+}
+
+/*estilos de mision,vision*/
+.container__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 390px;
+    height: 454px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, #1aaf9b 60%, rgb(86, 220, 224) 88%,
+            rgb(204, 216, 240) 40%, rgba(1, 167, 185, 0.822) 48%);
+    color: #f1f1f1;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, #7fffd4 30%, rgb(86, 220, 224) 88%,
+            #ffe0b5 40%, #f1f1f1 78%);
+    color: #0c7466;
+    transform: rotateY(180deg);
+}
+
+.container_img {
+    margin: 0 auto;
+}
+
+.card__info p {
+    margin: 0 30px;
+    text-align: justify;
+    padding: 2%;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.img__logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo__vision {
+    width: 80%;
+}
+
+/*estilos de nosotros*/
+.nosotros {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    background-image: linear-gradient(135deg, #003989 9%, #497cb6 48%, #6195CF 70%);
+}
+
+.titulonosotros h2 {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    margin-top: -40px;
+}
+
+.container_nosotros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.tarjeta {
+    flex: 1;
+    max-width: 200px;
+    padding: 20px;
+    margin: 60px 10px 60px 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #eee8e8;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta h5 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 920px) {
+    #particles-js {
+        height: 550px;
+    }
+
+    .container__emprenesy {
+        display: block;
+        top: 100px;
+        margin-left: 0;
+        margin-right:0;
+        left: 30px;
+        bottom: 0;
+        width: 90%;
+        height: fit-content;
+    
+    }
+
+    .emprenesy__slogan h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .emprenesy__logo {
+        display: none;
+    }
+    .container__info{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        width: 90%;
+    }
+    .flip-card {
+        width: 280px;
+        margin: 15px auto;
+    }
+    .card__info p {
+        font-size: 18px;
+    }
+    
+}

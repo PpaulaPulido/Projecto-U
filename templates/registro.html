@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/registro.css">
+    <link rel="stylesheet" href="{{url_for ('static', filename='styles/registro.css')}}">
+     <title>Formulario Registro</title>
+    <link rel="icon" href="../img/Logo2.jpeg" type="image/icon type">
+</head>
+
+<body>
+    <h4 style="text-align: center; color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px; margin: 20px;">Registrate</h4>
+    <div class="login-container">
+        
+        <form action=""  method="post" onsubmit="return verificacionContrasenas(event)" id="registroForm" >
+            <div class="input-group">
+                <label for="rol">Escoge tu rol</label>
+                <select name="rol" id="rol" class="controls">
+                    <option value="">Seleccionar</option>
+                    <option value="usuario">Usuario</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="nombres">Nombres:</label>
+                <input class="controls" type="text" id="nombres" name="nombres">
+            </div>
+            <div class="input-group">
+                <label for="apellidos">Apellidos:</label>
+                <input class="controls" type="text" id="apellidos" name="apellidos">
+            </div>
+            <div class="input-group">
+            <label for="tel">Número telefónico </label>
+                <input class="controls" type="number" name="tel" id="tel">
+            </div>
+            <div class="input-group">
+                <label for="fechaNac">Fecha de Nacimiento:</label>
+                <input class="controls" type="date" name="fechaNac" id="fechaNac" required>
+            </div>
+            <div class="input-group">
+                <label for="correo">Correo eletrónico</label>
+                <input class="controls" type="email" name="correo" id="correo" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Contraseña</label>
+                <input class="controls" type="password" name="contrasena" id="contrasena">
+            </div>
+            <div class="input-group">
+                <label for="confirmar_contrasena">Confirmar contrasena</label>
+                <input  class="controls"  type="password" name="confirmar_contrasena" id="confirmar_contrasena">
+            </div>
+            <div class="input-group">
+
+            <input class="botons" type="submit" value="Registrar">
+
+            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+
+            <p><a href="#">¿ya tienes cuenta?</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/registro.js"></script>
+</body>
+
+</html>

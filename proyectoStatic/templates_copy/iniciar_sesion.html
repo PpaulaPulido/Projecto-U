@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="icon" href="/static/img/Logo2.jpeg" type="image/icon type">
+    
+    <link rel="stylesheet" href="/static/styles/iniciar_sesion.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenido a Emprenesy</h1>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2> Iniciar Sesion</h2>
+            <form id="loginForm" action="/" method="post">
+                <div class="input-group">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                    <a href="recuperar_contraseña.html" class="forgot-passaword">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/sesion.js"></script>
+    
+</body>
+
+</html>
